@@ -12,6 +12,7 @@ class TransactionList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 300,
+      color: Colors.red,
       child: transactions.isEmpty
           ? Column(
               children: [
@@ -23,11 +24,12 @@ class TransactionList extends StatelessWidget {
                   height: 50,
                 ),
                 Container(
-                    height: 200,
-                    child: Image.asset(
-                      'assets/images/waiting.png',
-                      fit: BoxFit.cover,
-                    )),
+                  height: 200,
+                  child: Image.asset(
+                    'assets/images/waiting.png',
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ],
             )
           : ListView.builder(
